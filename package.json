@@ -10,7 +10,7 @@
     "build:p": "vue-cli-service build --target lib ./src/components/index.js --name lib --dest lib",
     "pub": "npm publish --access public",
     "docs": "vuepress dev docs --temp .temp",
-    "docs:build": "vuepress build"
+    "build:docs": "vuepress build"
   },
   "dependencies": {
     "core-js": "^3.8.3",
