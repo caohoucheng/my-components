@@ -4,8 +4,8 @@ function resolve(_path) {
 }
 module.exports = {
   port: "9000",
-  base: "/",
-  dest: "/my-components/",
+  base: "/my-components/",
+  // dest: "./docs/.vuepress/build",
   title: "my-components",
   description: "my-components DOCS",
   themeConfig: {
