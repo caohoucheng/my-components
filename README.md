@@ -51,8 +51,7 @@ Clone 这个 project
 {
     "name": "@caocc/components",
     "version": "0.0.1",//=>0.0.X
-    "private": false,
-    ...
+    "private": false
 }
 
 ```
@@ -67,6 +66,12 @@ Clone 这个 project
 
 ```bash
   npm run pub # npm publish --access public
+```
+
+## 文档预览
+
+```bash
+  npm run docs
 ```
 
 ## 文档打包
@@ -120,10 +125,10 @@ Clone 这个 project
 
 ```javascript
 
-import components from '@caocc/components'
+  import components from '@caocc/components'
 
-import '@caocc/components/lib/lib.css'
+  import '@caocc/components/lib/lib.css'
 
-Vue.use(components)
+  Vue.use(components)
 
 ```

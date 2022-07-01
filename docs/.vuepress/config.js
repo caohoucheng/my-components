@@ -6,6 +6,7 @@ module.exports = {
   port: "9000",
   base: "/my-components/",
   // dest: "./docs/.vuepress/build",
+  plugins: ['demo-container'],
   title: "my-components",
   description: "my-components DOCS",
   themeConfig: {
@@ -14,7 +15,7 @@ module.exports = {
       {
         text: '组件',
         items: [
-          { text: '组件1', link: '/guide/ex1' },
+          { text: 'table封装', link: '/guide/table' },
           { text: '组件2', link: '/guide/ex2' }
         ]
       },
@@ -22,7 +23,7 @@ module.exports = {
     ],
     sidebar: [
       '/guide/',
-      '/guide/ex1',
+      '/guide/table',
       '/guide/ex2'
     ],
   },

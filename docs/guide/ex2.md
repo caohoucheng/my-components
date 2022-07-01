@@ -1,25 +1,41 @@
-# 组件2
+# Select 选择器
 
-绑定该指令，点击元素才能实现复制功能
+当选项过多时，使用下拉菜单展示并选择内容。
 
-## 标题2
+## 基本用法
 
-::: tip
-This is a tip
+适用广泛的基础单选
+
+::: demo
+
+```html
+<template>
+  <el-select v-model="value" placeholder="请选择">
+    <el-option
+      v-for="item in options"
+      :key="item.value"
+      :label="item.label"
+      :value="item.value">
+    </el-option>
+  </el-select>
+</template>
+
+<script>
+  export default {
+    data() {
+      return {
+        options: [{
+          value: '选项1',
+          label: '黄金糕'
+        }, {
+          value: '选项2',
+          label: '双皮奶'
+        }],
+        value: ''
+      }
+    }
+  }
+</script>
+```
+
 :::
-
-::: warning
-This is a warning
-:::
-
-::: danger
-This is a dangerous warning
-:::
-
-## 标题3
-
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |

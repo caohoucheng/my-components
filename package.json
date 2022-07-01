@@ -13,7 +13,9 @@
     "build:docs": "vuepress build"
   },
   "dependencies": {
-    "core-js": "^3.8.3",
+    "async-validator": "^1.11.5",
+    "core-js": "^3.23.3",
+    "element-ui": "^2.15.9",
     "vue": "^2.6.14",
     "vuepress": "^1.9.7"
   },
@@ -28,7 +30,8 @@
     "eslint-plugin-vue": "^8.0.3",
     "sass": "^1.53.0",
     "sass-loader": "^13.0.2",
-    "vue-template-compiler": "^2.6.14"
+    "vue-template-compiler": "^2.6.14",
+    "vuepress-plugin-demo-container": "^0.2.0"
   },
   "eslintConfig": {
     "root": true,
